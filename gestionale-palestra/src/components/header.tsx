@@ -3,9 +3,8 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-  background-color: #282c34;
   padding: 20px;
-  color: white;
+  color: black;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -14,7 +13,7 @@ const StyledHeader = styled.header`
 `;
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('header');
   return (
     <StyledHeader>
       <h1>{t('HeaderTitle.Title')}</h1> 
