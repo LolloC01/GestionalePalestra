@@ -3,9 +3,7 @@ import { initReactI18next } from 'react-i18next'
 import EN from './en'
 import IT from './it'
 
-export type Locale = 'en' | 'el' | 'bg' | 'ro'
-
-export const FALLBACK_LANGUAGE = 'it'
+export type Locale = 'en' | 'it'
 
 export const initLocale = (i18n: i18n, locale?: Locale) => {
   return i18n.use(initReactI18next).init({
@@ -16,13 +14,8 @@ export const initLocale = (i18n: i18n, locale?: Locale) => {
       it: IT
     },
     lng: locale,
-    fallbackLng: FALLBACK_LANGUAGE,
+    fallbackLng: 'it',
     debug: false,
-    keySeparator: '.',
-    interpolation: {
-      escapeValue: false
-    },
-    returnNull: false,
-    compatibilityJSON: 'v4'
+    keySeparator: '.', // we use content as keys
   })
 }

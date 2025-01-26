@@ -12,13 +12,12 @@ const StyledHeader = styled.header`
   margin: -10px;
 `;
 
-const Header = () => {
+export const HeaderPageContent = () => {
   const { t } = useTranslation('header');
+
   return (
     <StyledHeader>
       <h1>{t('HeaderTitle.Title')}</h1> 
     </StyledHeader>
   );
 };
-
-export default Header;
