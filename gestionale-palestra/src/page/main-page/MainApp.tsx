@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../../components/header';
 import i18next from 'i18next';
 import { initLocale } from '../../i18n';
+import { HeaderPageContent } from '../../components/header/header';
 import { I18nextProvider } from 'react-i18next';
 
 const App: React.FC = () => {
@@ -10,7 +10,7 @@ const App: React.FC = () => {
 
   return (
     <I18nextProvider i18n={i18n}>
-      <Header />
+      <HeaderPageContent />
     </I18nextProvider>
     
   );
