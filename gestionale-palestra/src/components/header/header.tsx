@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   color: white;
   text-align: center;
   position: fixed;
@@ -11,8 +11,8 @@ const StyledHeader = styled.header`
 `;
 
 const HeaderContent = styled.div`
-  display: grid;
-  grid-template-columns: 20fr 1fr; 
+  display: flex;
+  justify-content: center;
   align-items: center;
 `;
 
